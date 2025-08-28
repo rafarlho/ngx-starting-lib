@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-angular-setup-lib',
+  selector: 'lib-ngx-start-setup',
   imports: [],
   template: `
     <p>
-      angular-setup-lib works!
+      ngx-start-setup works!
     </p>
   `,
   styles: ``
 })
-export class AngularSetupLibComponent {
+export class NgxStartSetup {
 
 }

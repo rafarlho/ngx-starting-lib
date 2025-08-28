@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AngularSetupLibComponent } from './angular-setup-lib.component';
+import { NgxStartSetup } from './ngx-start-setup';
 
-describe('AngularSetupLibComponent', () => {
-  let component: AngularSetupLibComponent;
-  let fixture: ComponentFixture<AngularSetupLibComponent>;
+describe('NgxStartSetup', () => {
+  let component: NgxStartSetup;
+  let fixture: ComponentFixture<NgxStartSetup>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AngularSetupLibComponent]
+      imports: [NgxStartSetup]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AngularSetupLibComponent);
+    fixture = TestBed.createComponent(NgxStartSetup);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

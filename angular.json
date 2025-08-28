@@ -3,35 +3,28 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-setup-lib": {
+    "ngx-start-setup": {
       "projectType": "library",
-      "root": "projects/angular-setup-lib",
-      "sourceRoot": "projects/angular-setup-lib/src",
+      "root": "projects/ngx-start-setup",
+      "sourceRoot": "projects/ngx-start-setup/src",
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/angular-setup-lib/ng-package.json"
-          },
+          "builder": "@angular/build:ng-packagr",
           "configurations": {
             "production": {
-              "tsConfig": "projects/angular-setup-lib/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-start-setup/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/angular-setup-lib/tsconfig.lib.json"
+              "tsConfig": "projects/ngx-start-setup/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular/build:karma",
           "options": {
-            "tsConfig": "projects/angular-setup-lib/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "tsConfig": "projects/ngx-start-setup/tsconfig.spec.json"
           }
         }
       }
