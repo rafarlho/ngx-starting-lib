@@ -3,5 +3,9 @@
   "dest": "../../dist/ngx-start-setup",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    "src/schematics/collection.json",
+    "src/schematics/**/schema.json"
+  ]
 }

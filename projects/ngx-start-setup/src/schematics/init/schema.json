@@ -1,0 +1,18 @@
+{
+    "schema":"https://json-schema.org/schema",
+    "id": "init",
+    "title": "Init project",
+    "type":"object",
+    "properties": {
+        "name": {
+            "type":"string",
+            "description": "Project name",
+            "default":"my-app"
+        },
+        "version": {
+            "type":"string",
+            "description": "Verision",
+            "default":"latest"
+        }
+    }
+}

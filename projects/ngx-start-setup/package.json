@@ -1,6 +1,12 @@
 {
   "name": "ngx-start-setup",
   "version": "0.0.1",
+  "description":"Schematic to init Angular Projects with optimized setup",
+  "author":"rafarlho",
+  "keywords":[
+    "angular",
+    "schematcs"
+  ],
   "peerDependencies": {
     "@angular/common": "^20.2.0",
     "@angular/core": "^20.2.0"
@@ -8,5 +14,10 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "schematics":"./schematics/collection.json",
+  "ng-add": {
+    "factory":"./schematcs/init/index#init",
+    "description":"Initial setup for angular"
+  }
 }
