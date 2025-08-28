@@ -1,0 +1,10 @@
+{
+    "$schema": "../../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "add-tailwind": {
+            "description":"Installs and configures tailwind",
+            "factory":"./schematics/add-tailwind/index#addTailwind",
+            "schema":"./schematics/add-tailwind/schema.json"
+        }
+    }
+}
