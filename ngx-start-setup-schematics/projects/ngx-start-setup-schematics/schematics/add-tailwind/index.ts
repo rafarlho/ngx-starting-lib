@@ -1,9 +1,5 @@
-import { chain, externalSchematic, Rule, SchematicContext, Tree } from "@angular-devkit/schematics"
+import { Rule, SchematicContext, Tree } from "@angular-devkit/schematics"
 import { NodePackageInstallTask } from "@angular-devkit/schematics/tasks"
-export interface InitSchema {
-    name?: string;
-    version?: string;
-}
 
 export function addTailwind(): Rule {
     return (_tree:Tree, context: SchematicContext) => {

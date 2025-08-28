@@ -16,4 +16,11 @@ run(`npx -p  @angular/cli@${angularVersion} ng new --style=scss --ai-config=none
 
 process.chdir(appName)
 
+console.log("Installing schematics package...")
+run("npm install ../ngx-start-setup-schematics/dist/ngx-start-setup-schematics/ngx-start-setup-schematics-0.0.1.tgz")
+console.log("Successfully installed schematics package!")
+console.log("Installing and configuring TailwindCSS!")
+run("ng g ngx-start-setup-schematics:add-tailwind")
+console.log("Successfully installed and configured TailwindCSS!")
+
 console.log("Your app is now ready to go! Happy coding!")

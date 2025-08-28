@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:schematics": "npx tsc -p projects/ngx-start-setup-schematics/tsconfig.schematics.json",
+    "build:schematics:pack": "npm run build:schematics && ng build ngx-start-setup-schematics && npm pack dist/ngx-start-setup-schematics"
+  
   },
   "prettier": {
     "printWidth": 100,

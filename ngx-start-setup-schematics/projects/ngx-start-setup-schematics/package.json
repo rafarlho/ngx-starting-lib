@@ -10,6 +10,6 @@
   },
   "sideEffects": false,
 
-  "schematics":"./schematics/collection.json"
+  "schematics":"./collection.json"
   
 }

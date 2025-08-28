@@ -3,6 +3,9 @@
   "dest": "../../dist/ngx-start-setup-schematics",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
-  
+  },
+  "assets": [
+    "./collection.json",
+    "./schematics/add-tailwind"
+  ]
 }

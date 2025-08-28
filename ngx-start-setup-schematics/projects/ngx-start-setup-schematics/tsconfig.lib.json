@@ -10,7 +10,8 @@
     "types": []
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "schematics/**/*.ts"
   ],
   "exclude": [
     "**/*.spec.ts"

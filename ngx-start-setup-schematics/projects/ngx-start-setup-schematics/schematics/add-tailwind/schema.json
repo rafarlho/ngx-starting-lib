@@ -1,6 +1,6 @@
 {
     "schema":"https://json-schema.org/schema",
-    "id": "add-tailwind",
+    "$id": "add-tailwind",
     "title": "Adds and configures Tailwind",
     "type":"object",
     "properties":{}
