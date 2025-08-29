@@ -1,0 +1,13 @@
+{
+    "$schema": "../../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "schematics": {
+        "ng-add": {
+            "description":"Adds ngx-start-setup-schematics library o project",
+            "factory":"./ng-add/index#ngAdd"
+        },
+        "add-tailwind" : {
+            "description":"Installs and configures TailwindCSS",
+            "factory":"./add-tailwind/index#addTailwind"
+        }
+    }
+}

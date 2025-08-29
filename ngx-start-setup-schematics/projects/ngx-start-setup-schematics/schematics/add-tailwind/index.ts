@@ -2,7 +2,7 @@ import { Rule, SchematicContext, Tree } from "@angular-devkit/schematics"
 import { NodePackageInstallTask } from "@angular-devkit/schematics/tasks"
 
 export function addTailwind(): Rule {
-    return (_tree:Tree, context: SchematicContext) => {
+    return (tree:Tree, context: SchematicContext) => {
         context.logger.info("Installing TailwindCss...")
         
         context.addTask(new NodePackageInstallTask({
@@ -10,15 +10,15 @@ export function addTailwind(): Rule {
             workingDirectory:''
         }))
 
-        _tree.create('postcssrc.json',postcssrcContent)
+        tree.create('postcssrc.json',postcssrcContent)
 
         const stylesScssPath = "src/styles.scss"
-        const content = _tree.read(stylesScssPath)!.toString("utf-8")
+        const content = tree.read(stylesScssPath)!.toString("utf-8")
         const tailwindImport = '@use "tailwindcss";'
         if(!content.includes(tailwindImport)) {
-            _tree.overwrite(stylesScssPath,tailwindImport + '\n' + content)
+            tree.overwrite(stylesScssPath,tailwindImport + '\n' + content)
         }
-        return _tree
+        return tree
     }
 }
 

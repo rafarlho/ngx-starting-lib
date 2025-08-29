@@ -7,9 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:schematics": "npx tsc -p projects/ngx-start-setup-schematics/tsconfig.schematics.json",
-    "build:schematics:pack": "npm run build:schematics && ng build ngx-start-setup-schematics && npm pack dist/ngx-start-setup-schematics"
-  
+    "build:schematics": "ng build && cd ./projects/ngx-start-setup-schematics && npm run build",
+    "publish:schematics": "cd ./dist/ngx-start-setup-schematics && npm publish"
   },
   "prettier": {
     "printWidth": 100,
@@ -41,6 +40,7 @@
     "@angular/cli": "^20.2.1",
     "@angular/compiler-cli": "^20.2.0",
     "@types/jasmine": "~5.1.0",
+    "copyfiles": "^2.4.1",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

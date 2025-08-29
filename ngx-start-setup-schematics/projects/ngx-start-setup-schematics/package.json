@@ -1,6 +1,6 @@
 {
   "name": "ngx-start-setup-schematics",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": "^20.2.0",
     "@angular/core": "^20.2.0"
@@ -9,7 +9,15 @@
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-
-  "schematics":"./collection.json"
-  
+  "publishConfig": {
+    "registry": "http://localhost:4873"
+  },
+  "ng-add": {
+    "save": "false"
+  },
+  "schematics": "./schematics/collection.json",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json ../../dist/ngx-start-setup-schematics"
+  }
 }
