@@ -8,6 +8,10 @@
         "add-tailwind" : {
             "description":"Installs and configures TailwindCSS",
             "factory":"./add-tailwind/index#addTailwind"
+        },
+        "add-material" : {
+            "description":"Installs and configures Angular Material",
+            "factory":"./add-material/index#addMaterial"
         }
     }
 }

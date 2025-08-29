@@ -1,7 +1,0 @@
-{
-    "schema":"https://json-schema.org/schema",
-    "$id": "add-material",
-    "title": "Adds and configures Angular Material",
-    "type":"object",
-    "properties":{}
-}

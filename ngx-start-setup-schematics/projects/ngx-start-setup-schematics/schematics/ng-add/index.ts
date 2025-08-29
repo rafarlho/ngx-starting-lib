@@ -1,10 +1,9 @@
 import { Rule, SchematicContext, Tree } from "@angular-devkit/schematics";
-import { NodePackageInstallTask } from "@angular-devkit/schematics/tasks";
 
 export function ngAdd():Rule {
     return (tree: Tree, context:SchematicContext) => {
-        context.logger.info('Installing dependencies...')
-        context.addTask(new NodePackageInstallTask())
+        context.logger.info('Successfully installed ngx-start-setup-schematics!')
+        context.logger.info('Initilizing dependencies installation and configuration...')
         return tree
     }
 }
