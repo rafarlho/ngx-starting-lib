@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id":"add-material",
+    "title":"Customizes entry page",
+    "type":"object",
+    "properties":{
+        "createCustomTheme":{
+            "description":"Create custom theme",
+            "type":"string",
+            "x-prompt":"Do you want to create a custom theme?",
+            "default":"false"
+        }
+    }
+
+}

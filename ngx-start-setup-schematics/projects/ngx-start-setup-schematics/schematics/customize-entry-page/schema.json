@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id":"custom-entry-page",
+    "title":"Customizes entry page",
+    "type":"object",
+    "properties":{
+        "name":{
+            "description":"Name of the app",
+            "type":"string"
+        }
+    },
+
+}

@@ -9,9 +9,21 @@
             "description":"Installs and configures TailwindCSS",
             "factory":"./add-tailwind/index#addTailwind"
         },
+        "add-generic-providers" : {
+            "description":"Adds generic use providers",
+            "factory":"./add-material/index#addGenericProviders"
+        },
         "add-material" : {
             "description":"Installs and configures Angular Material",
+            "schema": "./add-material/schema.json",
             "factory":"./add-material/index#addMaterial"
+        },
+        "customize-entry-page" : {
+            "description":"Updates entry page",
+            "factory":"./customize-entry-page/index#customizeEntryPage",
+            "schema": "./customize-entry-page/schema.json",
+            "aliases": ["finalize"]
         }
+
     }
 }
