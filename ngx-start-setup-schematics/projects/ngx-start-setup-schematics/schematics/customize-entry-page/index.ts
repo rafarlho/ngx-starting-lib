@@ -3,10 +3,7 @@ import { apply, MergeStrategy, mergeWith, move, Rule, SchematicContext, template
 import { AppName } from "../generic-models/app-name";
 
 export function customizeEntryPage(option: AppName): Rule {
-    return (_tree: Tree, context: SchematicContext) => {
-        context.logger.info(`Customizing entry page for app`);
-        context.logger.info(`Customizing entry page for app: ${option.name}`);
-
+    return (_tree: Tree, _context: SchematicContext) => {
         const source = apply(url('./files'), [
             template({
                 ...strings,

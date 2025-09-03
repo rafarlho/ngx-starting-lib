@@ -3,7 +3,6 @@ import { NodePackageInstallTask } from "@angular-devkit/schematics/tasks"
 
 export function addTailwind(): Rule {
     return (tree:Tree, context: SchematicContext) => {
-        context.logger.info("Installing TailwindCss...")
         
         context.addTask(new NodePackageInstallTask({
             packageName:"tailwindcss @tailwindcss/postcss postcss",

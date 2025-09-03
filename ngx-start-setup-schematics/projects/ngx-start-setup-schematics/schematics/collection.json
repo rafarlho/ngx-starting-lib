@@ -15,7 +15,6 @@
         },
         "add-material" : {
             "description":"Installs and configures Angular Material",
-            "schema": "./add-material/schema.json",
             "factory":"./add-material/index#addMaterial"
         },
         "customize-entry-page" : {
