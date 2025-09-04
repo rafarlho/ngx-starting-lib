@@ -11,11 +11,16 @@
         },
         "add-generic-providers" : {
             "description":"Adds generic use providers",
-            "factory":"./add-material/index#addGenericProviders"
+            "factory":"./add-generic-providers/index#addGenericProviders"
         },
         "add-material" : {
             "description":"Installs and configures Angular Material",
             "factory":"./add-material/index#addMaterial"
+        },
+        "add-ngx-translate" : {
+            "description":"Installs and configures Ngx Translate",
+            "factory":"./add-ngx-translate/index#addNgxTranslate",
+            "schema": "./add-ngx-translate/schema.json"
         },
         "customize-entry-page" : {
             "description":"Updates entry page",

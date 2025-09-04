@@ -8,6 +8,5 @@
             "description":"Name of the app",
             "type":"string"
         }
-    },
-
+    }
 }

@@ -43,10 +43,7 @@ function getUserInput(question, defaultValue) {
             validaAppName = true;
         }
     } while(!validaAppName)
-    // const angularVersion = await getUserInput(chalk.blue("What version should it be?(latest): "),"latest")
-
-    // run(`npx -p  @angular/cli@${angularVersion} ng new --style=scss --ai-config=none --zoneless=false --ssr=false --create-application=${createApplication} ${appName}`)
-
+  
     try {
         run(`npx -p  @angular/cli@20 ng new ${appName?? "MyApp"}`)
     }catch(ex) {
@@ -54,24 +51,32 @@ function getUserInput(question, defaultValue) {
         log(chalk.redBright( "Please consult the command window and try again.\n"))
         throw ex
     }
-    log(chalk.bgGreen.bold(`Successfully created ${appName} in version ${angularVersion} `))
+    log(chalk.bgGreen.bold(`Successfully created ${appName}.`))
     process.chdir(appName)
 
     //DEV -> creates and instatiates npmrc t Verdaccio
     run(`echo registry=http://localhost:4873 > .npmrc`)
 
-    log(chalk.bgMagenta.bold("\nInstalling schematics package..."))
+    log(chalk.bgBlue.bold("\nInstalling schematics package..."))
     run("ng add ngx-start-setup-schematics --skip-confirmation")
-    log(chalk.bgGreen.bold("Successfully installed schematics package!\n"))
+    log(chalk.bgGreen.bold("Successfully installed schematics package!"))
 
-    log(chalk.bgHex("#7447b3").bold("\nInstalling and configuring Angular Material!"))
+    log(chalk.bgBlue.bold("\nInstalling and configuring Angular Material!"))
     run("npm install @angular/material")
     run("ng g ngx-start-setup-schematics:add-material")
     log(chalk.bgGreen.bold("Successfully installed and configured Angular Material!"))
 
-    log(chalk.bgHex("#e864d4").bold("\nInstalling and configuring TailwindCSS!"))
+    log(chalk.bgBlue.bold("\nInstalling and configuring TailwindCSS!"))
     run("ng g ngx-start-setup-schematics:add-tailwind")
     log(chalk.bgGreen.bold("Successfully installed and configured TailwindCSS!"))
+
+    log(chalk.bgBlue.bold("\nConfiguring additionql providers!"))
+    run("ng g ngx-start-setup-schematics:add-generic-providers")
+    log(chalk.bgGreen.bold("Successfully configured providers!"))
+
+    log(chalk.bgBlue.bold("\nInstalling and configuring NgxTranslate!"))
+    run("ng g ngx-start-setup-schematics:add-ngx-translate")
+    log(chalk.bgGreen.bold("Successfully installed and configured NgxTranslate!\n"))
 
     run(`ng g ngx-start-setup-schematics:customize-entry-page --name ${appName}`)
 

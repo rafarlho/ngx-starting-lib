@@ -1,6 +1,6 @@
 {
   "name": "ngx-starting-lib",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Client to create angular projects with Angular Material and Tailwind.",
   "main": "index.js",
   "scripts": {

@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "$id":"add-ngx-translate",
+    "title":"Installs and configures Ngx-Translate",
+    "type":"object",
+    "properties":{
+        "languages":{
+            "description": "List of languanges separetted by commas",
+            "type": "string",
+            "x-prompt": "Insert the desired languages (e.g.: 'en,fr,es'):",
+            "default":"en"
+        },
+        "default":{
+            "description": "Default language",
+            "type": "string",
+            "x-prompt": "Insert default language:",
+            "default":"en"
+        }
+    }
+}
