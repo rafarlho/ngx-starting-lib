@@ -1,6 +1,6 @@
 {
   "name": "ngx-start-setup-schematics",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Schematics to start Angular projects with TailwindCss and Angular Material.",
   "author": "rafarlho",
   "keywords": ["angular", "schematics", "tailwind","angular-material"],

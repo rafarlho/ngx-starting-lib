@@ -31,7 +31,7 @@ npm install -g ngx-starting-lib
 Run the following command to create and set up a new Angular project:
 
 ```bash
-ngx-start-setup
+npx ngx-start-setup
 ```
 
 The CLI will guide you through the setup process, including:
