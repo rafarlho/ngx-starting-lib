@@ -1,7 +1,7 @@
 {
   "name": "ngx-starting-lib",
   "version": "1.0.0",
-  "description": "Client to create angular projects with Angular Material and Tailwind.",
+  "description": "Client to create angular projects with Angular Material, Tailwind and .",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,7 +12,6 @@
   },
   "keywords": [],
   "author": "rafarlho",
-  "license": "ISC",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/rafarlho/ngx-starting-lib/issues"
