@@ -1,0 +1,29 @@
+{
+  "name": "ngx-starting-lib",
+  "version": "1.0.2",
+  "description": "Client to create angular projects with Angular Material, Tailwind and .",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafarlho/ngx-starting-lib.git"
+  },
+  "keywords": [],
+  "author": "rafarlho",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rafarlho/ngx-starting-lib/issues"
+  },
+  "homepage": "https://github.com/rafarlho/ngx-starting-lib#readme",
+  "bin": {
+    "ngx-start-setup": "./bin/ngx-start-setup.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}

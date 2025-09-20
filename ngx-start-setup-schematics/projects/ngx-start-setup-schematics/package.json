@@ -1,0 +1,27 @@
+{
+  "name": "ngx-start-setup-schematics",
+  "version": "1.0.2",
+  "description": "Schematics to start Angular projects with TailwindCss and Angular Material.",
+  "author": "rafarlho",
+  "keywords": ["angular", "schematics", "tailwind","angular-material"],
+  
+  "peerDependencies": {
+    "@angular/common": "^20.2.0",
+    "@angular/core": "^20.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "registry<to-remove-in-dev>": "http://localhost:4873"
+  },
+  "ng-add": {
+    "save": "false"
+  },
+  "schematics": "./schematics/collection.json",
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json",
+    "postbuild": "copyfiles schematics/collection.json schematics/*/files/** schematics/*/schema.json ../../dist/ngx-start-setup-schematics"
+  }
+}

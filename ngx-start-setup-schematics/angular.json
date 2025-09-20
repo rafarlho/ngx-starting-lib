@@ -1,0 +1,33 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-start-setup-schematics": {
+      "projectType": "library",
+      "root": "projects/ngx-start-setup-schematics",
+      "sourceRoot": "projects/ngx-start-setup-schematics/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-start-setup-schematics/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-start-setup-schematics/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/ngx-start-setup-schematics/tsconfig.spec.json"
+          }
+        }
+      }
+    }
+  }
+}
