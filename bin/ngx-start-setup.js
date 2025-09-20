@@ -55,7 +55,7 @@ function getUserInput(question, defaultValue) {
     process.chdir(appName)
 
     //DEV -> creates and instatiates npmrc t Verdaccio
-    run(`echo registry=http://localhost:4873 > .npmrc`)
+    // run(`echo registry=http://localhost:4873 > .npmrc`)
 
     log(chalk.bgBlue.bold("\nInstalling schematics package..."))
     run("ng add ngx-start-setup-schematics --skip-confirmation")
