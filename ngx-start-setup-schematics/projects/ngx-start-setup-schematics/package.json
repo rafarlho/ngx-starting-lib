@@ -14,7 +14,7 @@
   },
   "sideEffects": false,
   "publishConfig": {
-    "registry": "http://localhost:4873"
+    "registry<to-remove-in-dev>": "http://localhost:4873"
   },
   "ng-add": {
     "save": "false"

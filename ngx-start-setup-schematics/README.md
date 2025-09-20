@@ -1,59 +1,56 @@
 # NgxStartSetupSchematics
+# ngx-start-setup-schematics
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.2.1.
+**ngx-start-setup-schematics** is a CLI tool designed to streamline the setup of Angular projects with essential configurations, including Angular Material, TailwindCSS, and ngx-translate. It provides a set of schematics to automate repetitive tasks, making it easier to bootstrap and customize Angular applications.
 
-## Development server
+---
 
-To start a local development server, run:
+## Features
 
-```bash
-ng serve
-```
+- **Angular Material Integration**: Quickly install and configure Angular Material with prebuilt themes and typography settings.
+- **TailwindCSS Setup**: Seamlessly integrate TailwindCSS into your Angular project.
+- **Ngx-Translate Configuration**: Add and configure ngx-translate for internationalization, including language file generation.
+- **Generic Providers**: Add reusable providers to your Angular application.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Installation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+To install the library globally, run:
 
 ```bash
-ng generate --help
+npm install -g ngx-start-setup-schematics
 ```
 
-## Building
+--- 
 
-To build the project run:
+## Usage
 
+### Add Angular Material
 ```bash
-ng build
+ng g ngx-start-setup-schematics:add-material
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+### Add TailwindCSS
 ```bash
-ng test
-```
+ng g ngx-start-setup-schematics:add-tailwind
+``` 
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
+### Add Ngx-Translate
 ```bash
-ng e2e
+ng g ngx-start-setup-schematics:add-ngx-translate --languages="en,fr,es" --default="en"
 ```
+### Add generic providers
+```bash
+ng g ngx-start-setup-schematics:add-generic-providers
+``` 
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## Contributing
+Contributions are welcome! If you find a bug or have a feature request, please open an issue or submit a pull request.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## Author
+Created by rafarlho. If you have any questions or feedback, feel free to reach out!
